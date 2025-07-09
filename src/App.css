@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #00ffd5;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: #1a1a1a;
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 255, 213, 0.3);
+}
+
+.count {
+  font-size: 2.5rem;
+  padding: 0 20px;
+  color: #00ffd5;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #00ffd5;
+  color: #00ffd5;
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ffd5;
+  color: #1a1a1a;
+}
+
+.btn.minus {
+  border-color: #ff4c4c;
+  color: #ff4c4c;
+}
+
+.btn.minus:hover {
+  background: #ff4c4c;
+  color: #1a1a1a;
+}

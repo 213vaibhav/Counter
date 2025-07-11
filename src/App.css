@@ -28,12 +28,19 @@ body {
   padding: 30px 50px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 255, 213, 0.3);
+  margin-bottom: 25px;
 }
 
 .count {
   font-size: 2.5rem;
   padding: 0 20px;
   color: #00ffd5;
+  transition: color 0.3s ease;
+}
+
+/* When count is negative */
+.count.negative {
+  color: #ff4c4c;
 }
 
 .btn {
@@ -60,4 +67,26 @@ body {
 .btn.minus:hover {
   background: #ff4c4c;
   color: #1a1a1a;
+}
+
+/* ✅ Reset Button Style (Cool Blue Gradient) */
+.reset-box {
+  margin-top: 20px;
+}
+
+.btn.reset {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn.reset:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #5b86e5, #36d1dc);
 }
